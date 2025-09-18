@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact NSBLPA - Get in Touch</title>
+    <meta
+      name="description"
+      content="Get in touch with the NSBLPA team. We're here to help with questions about our league, teams, mobile apps, and investment opportunities."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span style="font-size: 2rem">🏆</span>
+            NSBLPA
+          </a>
+
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="teams.html">Teams</a>
+            <a href="apps.html">Apps</a>
+            <a href="ownership.html">Ownership</a>
+            <a href="contact.html" class="active">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-menu">
+          <a href="index.html">Home</a>
+          <a href="teams.html">Teams</a>
+          <a href="apps.html">Apps</a>
+          <a href="ownership.html">Ownership</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+      </header>
+
+      <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+          <div class="hero-content">
+            <h1>Get in Touch</h1>
+            <p>
+              Have questions about our league? Want to learn more about our
+              teams, mobile apps, or investment opportunities? We're here to
+              help!
+            </p>
+            <div class="btn-group">
+              <a href="#contact-form" class="btn btn-accent">Send Message</a>
+              <a href="#contact-info" class="btn btn-secondary">Contact Info</a>
+            </div>
+          </div>
+        </section>
+
+        <div class="grid grid-2">
+          <!-- Contact Form -->
+          <section id="contact-form" class="card">
+            <h2>Send Us a Message</h2>
+            <p class="text-secondary mb-3">
+              Fill out the form below and we'll get back to you within 24 hours.
+            </p>
+
+            <form class="contact-form" aria-label="Contact form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <select id="subject" name="subject" class="form-input">
+                  <option value="">Select a topic</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="teams">Team Information</option>
+                  <option value="apps">Mobile Apps</option>
+                  <option value="league">League Information</option>
+                  <option value="investment">Investment Opportunities</option>
+                  <option value="partnership">Partnership Opportunities</option>
+                  <option value="support">Technical Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-textarea"
+                  rows="6"
+                  placeholder="Tell us how we can help you..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </section>
+
+          <!-- Contact Information -->
+          <aside>
+            <div class="card" id="contact-info">
+              <h3>Contact Information</h3>
+              <div class="apps-grid">
+                <div class="app-card" style="cursor: default">
+                  <div class="app-icon">📧</div>
+                  <div class="app-content">
+                    <h4>Email</h4>
+                    <p>info@nsblpa.com</p>
+                  </div>
+                </div>
+
+                <div class="app-card" style="cursor: default">
+                  <div class="app-icon">📞</div>
+                  <div class="app-content">
+                    <h4>Phone</h4>
+                    <p>+1 (555) 123-NSBLPA</p>
+                  </div>
+                </div>
+
+                <div class="app-card" style="cursor: default">
+                  <div class="app-icon">📍</div>
+                  <div class="app-content">
+                    <h4>Address</h4>
+                    <p>123 Sales Street<br />Miami, FL 33101</p>
+                  </div>
+                </div>
+
+                <div class="app-card" style="cursor: default">
+                  <div class="app-icon">⏰</div>
+                  <div class="app-content">
+                    <h4>Business Hours</h4>
+                    <p>Mon-Fri: 9AM-6PM EST<br />Sat: 10AM-4PM EST</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>
+            &copy; 2024 NSBLPA. All rights reserved. |
+            <a href="contact.html">Contact Us</a> |
+            <a href="ownership.html">Ownership</a>
+          </p>
+          <p class="text-muted mt-2">
+            National Sales Bet League Professional Association
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>
